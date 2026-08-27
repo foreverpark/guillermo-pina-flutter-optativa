@@ -13,6 +13,7 @@ class MainApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Mi formulario alumno'),
           backgroundColor: Colors.blue,
+          centerTitle: true,
         ),
         body: SingleChildScrollView(
           child: Column(
