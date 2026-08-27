@@ -20,18 +20,7 @@ class MainApp extends StatelessWidget {
               Text('Formulario de alumno'),
               SizedBox(height: 20, child: Text('Guillermo')),
               SizedBox(height: 20, child: Text('Anderson')),
-              Container(
-                margin: const EdgeInsets.all(20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    ElevatedButton(
-                      onPressed: () => {},
-                      child: const Text('Guardar'),
-                    ),
-                  ],
-                ),
-              ),
+              ElevatedButton(onPressed: () => {}, child: const Text('Guardar')),
               const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -39,22 +28,22 @@ class MainApp extends StatelessWidget {
                   TextButton.icon(
                     onPressed: () => {},
                     icon: const Icon(Icons.add),
-                    label: const Text('Add'),
+                    label: const Text('Icon1'),
                   ),
                   TextButton.icon(
                     onPressed: () => {},
-                    icon: const Icon(Icons.add),
-                    label: const Text('Add'),
+                    icon: const Icon(Icons.abc_sharp),
+                    label: const Text('Icon2'),
                   ),
                   TextButton.icon(
                     onPressed: () => {},
-                    icon: const Icon(Icons.add),
-                    label: const Text('Add'),
+                    icon: const Icon(Icons.bed),
+                    label: const Text('Icon3'),
                   ),
                   TextButton.icon(
                     onPressed: () => {},
-                    icon: const Icon(Icons.add),
-                    label: const Text('Add'),
+                    icon: const Icon(Icons.list),
+                    label: const Text('Icon4'),
                   ),
                 ],
               ),
@@ -62,7 +51,8 @@ class MainApp extends StatelessWidget {
               Image.network(
                 width: 200,
                 height: 200,
-                "https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixid=M3w4MjcwNjd8MHwxfHNlYXJjaHwxfHxhbmltYWxzfGVufDB8fHx8MTc4NzYxNTg1Nnww&ixlib=rb-4.1.0&fit=max&q=80",
+                "https://www.speedrun.com/static/game/m1zw7x10/cover.png?v=9cbdfdc",
+                webHtmlElementStrategy: WebHtmlElementStrategy.prefer,
               ),
             ],
           ),
