@@ -11,7 +11,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Mi formulario alumno'),
+          title: const Text('Mi primera app'),
           backgroundColor: Colors.blue,
           centerTitle: true,
         ),
