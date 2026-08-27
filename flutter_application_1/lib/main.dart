@@ -19,8 +19,18 @@ class MainApp extends StatelessWidget {
           child: Column(
             children: [
               Text('Formulario de alumno'),
-              SizedBox(height: 20, child: Text('Guillermo')),
-              SizedBox(height: 20, child: Text('Anderson')),
+              TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: 'Nombre',
+                ),
+              ),
+              TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: 'Apellido',
+                ),
+              ),
               ElevatedButton(onPressed: () => {}, child: const Text('Guardar')),
               const SizedBox(height: 20),
               Row(
